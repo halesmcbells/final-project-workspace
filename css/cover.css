@@ -1,0 +1,67 @@
+
+/* formatting border for table */
+.projTitle {
+    border: 10px double hsl(162, 89%, 32%);
+    margin-right: 350px;
+    margin-left: 350px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.699);
+}
+
+.projTitle h1{
+    text-shadow: 1px 2px 1px rgba(247, 0, 103, 0.815);
+    color: whitesmoke;
+}
+
+.projDesc {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 60%;
+    width: 400px;
+    height: 330px;
+    padding-left: 8px;
+    border: 2px solid hsl(162, 87%, 3%);
+    background-image: url(../imgs/roomSM.jpg);
+    background-repeat: no-repeat;
+}
+
+.projDesc #descr{
+    font-size: 25px;
+    text-indent: 5%;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 2px rgb(250, 250, 250);
+    background-color: rgba(245, 245, 220, 0.404);
+}
+
+.projDesc #link{
+    text-align: center;
+}
+
+.progRep{
+    position: relative;
+    top: 15%;
+    left: 10%;
+}
+
+.bugRep{
+    position: relative;
+    top: 15%;
+    padding: 5px;
+    left: 10%;
+}
+
+.devMail{
+    position: fixed;
+    bottom: 0px;
+}
+
+.devMail p{
+    display: inline-block;
+    padding: 10px;
+}
+
+/* Background image */
+body{
+    background-image: url(https://laserbychristine.com/wp-content/uploads/2016/12/132341-Gif-Stars-Purple-Sparkles-Yes-Sparkle-Png-Transparent-Transparency-....gif);
+    background-color: hsl(282, 7%, 37%);
+}

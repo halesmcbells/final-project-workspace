@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/dress.css">
+        <title> Dress-Up Game</title>
+            <!-- Jquery library   ---->
+              <script
+              src="https://code.jquery.com/jquery-3.5.1.js"
+              integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+              crossorigin="anonymous"
+              ></script>
+    </head>
+    <body style="background-color:rgb(205, 134, 238); background-image: url(imgs/room.jpg); background-repeat: no-repeat;
+        background-position: 0px 80px;">
+        <div class="main">
+          <p id = "avatar"> <img src="imgs/avatarnobg.png" alt="Dressing Room"></p>
+          <img id ="hairChosen" src="imgs/blank.png">
+          <img id ="hatChosen" src="imgs/blank.png">
+          <!-- <img src="imgs/pinkfem.png" alt="">  -->
+
+          <p> <input type="button" value="Save avatar" id="save"> </p>
+         </div>
+
+        <form>
+          <div class="hatform">
+            <!-- <form id="choice"> -->
+              <p><input type="radio" name="hat" value="cowboy"> Cowboy hat </p>
+              <p><input type="radio" name="hat" value="baseball"> Baseball cap </p>
+              <p><input type="radio" name="hat" value="beanie"> Beanie </p>
+              <p><input type="radio" name="hat" value="crown"> Royal crown </p>
+              <p><input type="radio" name="hat" value="top"> Top hat </p>
+              <p><input type="radio" name="hat" value="wiz"> Magical hat </p>
+              <p><input type="radio" name="hat" value="removeHat"> No hat </p>
+            <!-- </form> -->
+          </div>
+        <script src="js/hatchange.js"></script>
+
+        <div class="hairform">
+          <!-- <form id="choice"> -->
+            <p><input type="radio" name="hair" value="blackmasc"> Short black  hair </p>
+            <p><input type="radio" name="hair" value="brownmasc"> Short brown hair </p>
+            <p><input type="radio" name="hair" value="longmasc"> Medium light hair </p>
+            <p><input type="radio" name="hair" value="curlfem"> Long curly brown hair </p>
+            <p><input type="radio" name="hair" value="silver"> Long silver hair </p>
+            <p><input type="radio" name="hair" value="pink"> Long pink hair </p>
+            <p><input type="radio" name="hair" value="removeHair"> No hair </p>
+          <!-- </form> -->
+        </div>
+        <script src="js/hairchange.js"></script>
+      </form>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js"></script>
+
+          <!-- save and display data -->
+        <script src="js/dbase.js"></script>
+        
+    </body>
+</html>
