@@ -1,5 +1,16 @@
-// JS for changing hair
+// Show or hide hair form
+$('.hairform').hide();    // hair form is initially hidden
 
+// function for hat button
+$('#hairbut').click(function(){
+    if($('.hairform').is(':visible')){  // if hair form IS visible
+        $('.hairform').hide();          // hide hair form on click
+    }else{
+        $('.hairform').show();          // if hair form is NOT visible, show form 
+    }
+});
+
+// JS for changing hair
 function hairchange(){
     let selecthair = document.querySelector('.hairform input[name="hair"]:checked').value;
     // console.log("hair" +selecthair);

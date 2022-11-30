@@ -1,5 +1,16 @@
-// JS for changing hat
+// Show or hide hat form
+$('.hatform').hide();    // hat form is initially hidden
 
+// function for hat button
+$('#hatbut').click(function(){
+    if($('.hatform').is(':visible')){  // if hat form IS visible
+        $('.hatform').hide();          // hide hat form on click
+    }else{
+        $('.hatform').show();          // if hat form is NOT visible, show form 
+    }
+});
+
+// JS for changing hat
 function hatchange(){
     let selecthat = document.querySelector('.hatform input[name="hat"]:checked').value;
     //console.log("hat" +selecthat);

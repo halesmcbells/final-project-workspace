@@ -1,9 +1,47 @@
+/* organize buttons for each form */
+
+#forminstruct{
+    position: absolute;
+    top: 20%;
+    left: 65px;
+    width: 100px;
+    text-align: center;
+}
+
+#hatbut{
+    position: absolute;
+    background-image: url(../imgs/hatbutton40.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(250, 235, 215, 0);
+    border: rgba(255, 255, 255, 0);
+    width: 40px;
+    height: 40px;
+    top: 30%;
+    left: 100px;
+}
+
+#hairbut{
+    position: absolute;
+    background-image: url(../imgs/hairbutton55.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(250, 235, 215, 0);
+    border: rgba(255, 255, 255, 0);
+    width: 53px;
+    height:49px;
+    top: 38%;
+    left: 90px;
+}
+
+
 /* move hatform to the left */
 .hatform {
     position: absolute;
     top: 38%;
     right: 200px;
-    background-color: rgba(128, 128, 128, 0.877);
+    color: white;
+    background-color: hsla(264, 63%, 19%, 0.842);
     border: 2px solid black;
     padding: 20px;
 }
@@ -12,8 +50,9 @@
 .hairform {
     position: absolute;
     top: 38%;
-    right: 400px;
-    background-color: rgba(128, 128, 128, 0.877);
+    right: 175px;
+    color: white;
+    background-color: hsla(264, 63%, 19%, 0.842);
     border: 2px solid black;
     padding: 20px;
 }
