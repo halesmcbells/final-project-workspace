@@ -29,14 +29,79 @@ $("#save").click(function (e) {
     firebase.firestore().collection('testfinaldata').add(data);
   });
 
-  firebase
-  .firestore()
-  .collection('testfinaldata')
-  .onSnapshot((querySnapshot) => {
-    console.log(querySnapshot.size);
-    querySnapshot.forEach((doc) => {
-      console.log(doc.data());
-      console.log(doc.data().hat);
-      console.log(doc.data().hair);
-    });
+
+ var i = 0;
+
+  $('#next').click(function () {
+    firebase
+    .firestore()
+    .collection('testfinaldata')
+    .onSnapshot((querySnapshot) => {
+     // console.log(querySnapshot.size);
+        const doc = querySnapshot.docs[i];
+        let currentHat = doc?.data()?.hat ?? "removeHat";
+        let selecthat = currentHat;
+            switch (selecthat) {
+              case "cowboy":
+                  document.getElementById("hatReview").setAttribute('src','imgs/cowboyHAT.png');
+                  break;
+              case "baseball":
+                  document.getElementById("hatReview").setAttribute('src','imgs/basebHAT.png');
+                  break;
+              case "beanie":
+                  document.getElementById("hatReview").setAttribute('src', 'imgs/beanie.png');
+                  break;
+              case "crown":
+                  document.getElementById("hatReview").setAttribute('src', 'imgs/crown.png');
+                  break;
+              case "top":
+                  document.getElementById("hatReview").setAttribute('src', 'imgs/tophat.png');
+                  break;
+              case "wiz":
+                  document.getElementById("hatReview").setAttribute('src', 'imgs/wizardhat.png');
+                  break;
+              case "removeHat":
+                  document.getElementById("hatReview").setAttribute('src', 'imgs/blank.png');
+                  break;
+          }      
+
+        //console.log(currentHat);
+        let currentHair = doc?.data()?.hair ?? "removeHair";
+        let selecthair = currentHair;
+        //the same switch as hairchange function
+          switch (selecthair) {
+              case "blackmasc":
+                  document.getElementById("hairReview").setAttribute('src','imgs/blackmasc.png');
+                  break;
+              case "brownmasc":
+                  document.getElementById("hairReview").setAttribute('src','imgs/brownmasc.png');
+                  break;
+              case "longmasc":
+                  document.getElementById("hairReview").setAttribute('src', 'imgs/longmasc.png');
+                  break;
+              case "curlfem":
+                  document.getElementById("hairReview").setAttribute('src', 'imgs/curlfem.png');
+                  break;
+              case "silver":
+                  document.getElementById("hairReview").setAttribute('src', 'imgs/silfem.png');
+                  break;
+              case "pink":
+                  document.getElementById("hairReview").setAttribute('src', 'imgs/pinkfem.png');
+                  break;
+              case "removeHair":
+                  document.getElementById("hairReview").setAttribute('src', 'imgs/blank.png');
+                  break;
+          }
+
+        if(i==querySnapshot.size-1){
+          i = 0;
+          //console.log(i);
+        } else{
+          i++;
+          //console.log(i);
+        }
+
+        }
+    );
+ 
   });
