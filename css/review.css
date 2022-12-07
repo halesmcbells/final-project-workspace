@@ -16,6 +16,36 @@
     left: 604px;
 }
 
+#pantsReview{
+    position: absolute;
+    top: 284px;
+    left: 487px;
+}
+
+#shirtReview{
+    position: absolute;
+    top: 350px;
+    left: 546px;
+}
+
+#shirtReview{
+    position: absolute;
+    top: 350px;
+    left: 546px;
+}
+
+#shoesReview{
+    position: absolute;
+    top: 700px;
+    left: 520px;
+}
+
+#dressReview{
+    position: absolute;
+    top: 362px;
+    left: 530px;
+}
+
 #next{
     position: absolute;
     top: 75%;
