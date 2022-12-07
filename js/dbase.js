@@ -97,28 +97,28 @@ $("#save").click(function (e) {
           let selectpants = currentPants;
           switch (selectpants) {
             case "denim":
-                document.getElementById("pantsChosen").setAttribute('src','imgs/denimpants.png');
+                document.getElementById("pantsReview").setAttribute('src','imgs/denimpants.png');
                 break;
             case "ripped":
-                document.getElementById("pantsChosen").setAttribute('src','imgs/rippedpants.png');
+                document.getElementById("pantsReview").setAttribute('src','imgs/rippedpants.png');
                 break;
             case "rose":
-                document.getElementById("pantsChosen").setAttribute('src', 'imgs/rosepants.png');
+                document.getElementById("pantsReview").setAttribute('src', 'imgs/rosepants.png');
                 break;
             case "overalls":
-                document.getElementById("pantsChosen").setAttribute('src', 'imgs/overalls.png');
+                document.getElementById("pantsReview").setAttribute('src', 'imgs/overalls.png');
                 break;
             case "blackskirt":
-                document.getElementById("pantsChosen").setAttribute('src', 'imgs/blackskirt.png');
+                document.getElementById("pantsReview").setAttribute('src', 'imgs/blackskirt.png');
                 break;
             case "beltskirt":
-                document.getElementById("pantsChosen").setAttribute('src', 'imgs/beltskirt.png');
+                document.getElementById("pantsReview").setAttribute('src', 'imgs/beltskirt.png');
                 break;
             case "purpleskirt":
-                document.getElementById("pantsChosen").setAttribute('src', 'imgs/purpskirt.png');
+                document.getElementById("pantsReview").setAttribute('src', 'imgs/purpskirt.png');
                 break;
             case "removePants":
-                document.getElementById("pantsChosen").setAttribute('src', 'imgs/blank.png');
+                document.getElementById("pantsReview").setAttribute('src', 'imgs/blank.png');
                 break;
         }
 
@@ -126,28 +126,28 @@ $("#save").click(function (e) {
         let selectshirt = currentShirt;
         switch (selectshirt) {
             case "blackpolo":
-                document.getElementById("shirtChosen").setAttribute('src','imgs/blackpolo.png');
+                document.getElementById("shirtReview").setAttribute('src','imgs/blackpolo.png');
                 break;
             case "whiteshirt":
-                document.getElementById("shirtChosen").setAttribute('src','imgs/whitesh.png');
+                document.getElementById("shirtReview").setAttribute('src','imgs/whitesh.png');
                 break;
             case "yellow":
-                document.getElementById("shirtChosen").setAttribute('src', 'imgs/yellow.png');
+                document.getElementById("shirtReview").setAttribute('src', 'imgs/yellow.png');
                 break;
             case "bluesweater":
-                document.getElementById("shirtChosen").setAttribute('src', 'imgs/bluesweater.png');
+                document.getElementById("shirtReview").setAttribute('src', 'imgs/bluesweater.png');
                 break;
             case "knotted":
-                document.getElementById("shirtChosen").setAttribute('src', 'imgs/bluetie.png');
+                document.getElementById("shirtReview").setAttribute('src', 'imgs/bluetie.png');
                 break;
             case "bluetshirt":
-                document.getElementById("shirtChosen").setAttribute('src', 'imgs/bluetsh.png');
+                document.getElementById("shirtReview").setAttribute('src', 'imgs/bluetsh.png');
                 break;
             case "flowerbutup":
-                    document.getElementById("shirtChosen").setAttribute('src', 'imgs/flowerbutup.png');
+                    document.getElementById("shirtReview").setAttribute('src', 'imgs/flowerbutup.png');
                     break;
             case "removeShirt":
-                document.getElementById("shirtChosen").setAttribute('src', 'imgs/blank.png');
+                document.getElementById("shirtReview").setAttribute('src', 'imgs/blank.png');
                 break;
         }
 
@@ -155,46 +155,45 @@ $("#save").click(function (e) {
         let selectdress = currentDress;
         switch (selectdress) {
             case "suit":
-                document.getElementById("dressChosen").setAttribute('src','imgs/suit.png');
+                document.getElementById("dressReview").setAttribute('src','imgs/suit.png');
                 break;
             case "floraldress":
-                document.getElementById("dressChosen").setAttribute('src','imgs/flowerdress.png');
+                document.getElementById("dressReview").setAttribute('src','imgs/flowerdress.png');
                 break;
             case "bluedress":
-                document.getElementById("dressChosen").setAttribute('src', 'imgs/bluedress.png');
+                document.getElementById("dressReview").setAttribute('src', 'imgs/bluedress.png');
                 break;
             case "polkadress":
-                document.getElementById("dressChosen").setAttribute('src', 'imgs/blackpolkadress.png');
+                document.getElementById("dressReview").setAttribute('src', 'imgs/blackpolkadress.png');
                 break;
             case "blackdress":
-                document.getElementById("dressChosen").setAttribute('src', 'imgs/blackdress.png');
+                document.getElementById("dressReview").setAttribute('src', 'imgs/blackdress.png');
                 break;
             case "removeFull":
-                document.getElementById("dressChosen").setAttribute('src', 'imgs/blank.png');
+                document.getElementById("dressReview").setAttribute('src', 'imgs/blank.png');
                 break;
         }
-
 
         let currentShoe = doc?.data()?.shoes ?? "removeShoes";
         let selectshoe = currentShoe;
         switch (selectshoe) {
             case "bluesneaks":
-                document.getElementById("shoesChosen").setAttribute('src','imgs/bluesneaks.png');
+                document.getElementById("shoesReview").setAttribute('src','imgs/bluesneaks.png');
                 break;
             case "brownboots":
-                document.getElementById("shoesChosen").setAttribute('src','imgs/brownboots.png');
+                document.getElementById("shoesReview").setAttribute('src','imgs/brownboots.png');
                 break;
             case "flats":
-                document.getElementById("shoesChosen").setAttribute('src', 'imgs/flats.png');
+                document.getElementById("shoesReview").setAttribute('src', 'imgs/flats.png');
                 break;
             case "converse":
-                document.getElementById("shoesChosen").setAttribute('src', 'imgs/platconv.png');
+                document.getElementById("shoesReview").setAttribute('src', 'imgs/platconv.png');
                 break;
             case "rainboots":
-                document.getElementById("shoesChosen").setAttribute('src', 'imgs/rainboots.png');
+                document.getElementById("shoesReview").setAttribute('src', 'imgs/rainboots.png');
                 break;
             case "removeShoes":
-                document.getElementById("shoesChosen").setAttribute('src', 'imgs/blank.png');
+                document.getElementById("shoesReview").setAttribute('src', 'imgs/blank.png');
                 break;
         }
 

@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'Rocher';
+    src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+  }
+ 
+  @font-palette-values --Purples {
+    font-family: Rocher;
+    base-palette: 6;
+  }
+ 
+  .purples {
+    font-palette: --Purples;
+  }
+
 #avatar{
     position: absolute;
     top: 200px;
@@ -45,15 +59,78 @@
     top: 362px;
     left: 530px;
 }
+ 
+#next, #prev{
+    position: static;
+    float: left;
+    top: 90%;
+    font-family: 'Rocher';
+    text-shadow: 1px 2px 1px thistle;
+    color: thistle;
+    font-size: 25px;
+    padding: 25px 14px;
+    background-color: hsl(282, 39%, 58%);
+    border-radius: 12px;
+    border-color: #df9dfe;
+    transition: all 0.5s;
+    cursor: pointer;
+    bottom: 10px;
+  }
+ 
+  #next, #prev:hover{
+    background-color: #bea6f3;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
 
-#next{
-    position: absolute;
-    top: 75%;
-    left: 3%;
+   
+#nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    margin: 0 0 1em 0;
+    padding: 0;
+    background-color: #bea6f3;
+    border-bottom: 1px solid #ccc;
+ }
+ 
+ 
+ 
+#navbar ul, #navbar li{
+    display: inline-block;
+    margin: 5px 5px 5px 5px;
+    padding: 2px;
+    border: #bea6f3 outset 5px;
+    background-color: RebeccaPurple;
 }
-
-#prev{
-    position: absolute;
-    top: 75%;
-    right: 3%;
+ 
+#nav ul {
+    list-style: none;
+    width: 800px;
+    margin: 0 auto;
+    padding: 0; }
+ 
+#nav li {
+    float: left; }
+ 
+/* other text font and color */
+p, figcaption, ol, #navbar li, a {
+    font-family: 'Rocher';
+   
+    color: thistle;
+    font-weight:900;
+    line-height: normal;
+    text-align: center;
 }
+ 
+/* rounded corners for navbar links */
+div.navbar li{
+    border-radius: 15px;
+}
+ 
+body{
+   
+    cursor: url(https://ani.cursors-4u.net/nature/nat-11/nat1047.cur), default;
+   
+    background-color: #926aa6;
+ 
+  }

@@ -1,12 +1,39 @@
+/* Font I found and do not own*/
+@font-face {
+    font-family: 'Rocher';
+    src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+  }
+ 
+  @font-palette-values --Purples {
+    font-family: Rocher;
+    base-palette: 6;
+  }
+ 
+  .purples {
+    font-palette: --Purples;
+  }
+  /*end of font I do not own*/
 /* organize buttons for each form */
 
+
+
+/* organize buttons for each form */
 #forminstruct{
     position: absolute;
-    top: 20%;
+    top: 10%;
     left: 65px;
     width: 100px;
     text-align: center;
+    font-family: 'Rocher';
+    text-shadow: 1px 2px 1px thistle;
+    color: thistle;
+    font-size: 20px;
+    padding: 25px 14px;
+    background-color: hsl(282, 39%, 58%);
+    border-radius: 12px;
+    border-color: #df9dfe;
 }
+
 
 #hatbut{
     position: absolute;
@@ -90,78 +117,96 @@
 /* move hatform to the left */
 .hatform {
     position: absolute;
-    top: 38%;
-    right: 200px;
+    bottom: 175px;
+    right: 175px;
     color: white;
-    background-color: hsla(264, 63%, 19%, 0.842);
-    border: 2px solid black;
+    background-color: hsla(264, 63%, 19%, 1);
+    border: 10px double  mediumpurple;
     padding: 20px;
+    min-width: 200px;
 }
 
 /* move hairform to the left */
 .hairform {
-    position: absolute;
-    top: 38%;
+    position: fixed;
+    bottom: 175px;
     right: 175px;
     color: white;
-    background-color: hsla(264, 63%, 19%, 0.842);
-    border: 2px solid black;
+    background-color: hsla(264, 63%, 19%, 1);
+    border: 10px double mediumpurple;
     padding: 20px;
+    min-width: 200px;
 }
 
 /* move pantsform */
 .pantsform {
-    position: absolute;
-    top: 38%;
+    position: fixed;
+    bottom: 175px;
     right: 175px;
     color: white;
-    background-color: hsla(264, 63%, 19%, 0.842);
-    border: 2px solid black;
-    padding: 15px;
+    background-color: hsla(264, 63%, 19%, 1);
+    border: 10px double mediumpurple;
+    padding: 20px;
+    min-width: 200px;
 }
 
 /* move shirtform */
 .shirtform {
-    position: absolute;
-    top: 38%;
+    position: fixed;
+    bottom: 175px;
     right: 175px;
     color: white;
-    background-color: hsla(264, 63%, 19%, 0.842);
-    border: 2px solid black;
-    padding: 15px;
+    background-color: hsla(264, 63%, 19%, 1);
+    border: 10px double mediumpurple;
+    padding: 20px;
+    min-width: 200px;
 }
 
-/* move shirtform */
+/* move dressform */
 .dressform {
-    position: absolute;
-    top: 38%;
+    position: fixed;
+    bottom: 175px;
     right: 175px;
     color: white;
-    background-color: hsla(264, 63%, 19%, 0.842);
-    border: 2px solid black;
-    padding: 15px;
+    background-color: hsla(264, 63%, 19%, 1);
+    border: 10px double mediumpurple;
+    padding: 20px;
+    min-width: 200px;
+
 }
 
 /* move shoeform */
 .shoeform {
-    position: absolute;
-    top: 38%;
+    position: fixed;
+    bottom: 175px;
     right: 175px;
     color: white;
-    background-color: hsla(264, 63%, 19%, 0.842);
-    border: 2px solid black;
-    padding: 15px;
-}
-
-#save {
-    position: absolute;
-    right: 175px;
-    top: 90%;
+    background-color: hsla(264, 63%, 19%, 1);
+    border: 10px double mediumpurple;
     padding: 20px;
-    font-weight: 900;
+    min-width: 200px;
+}
+ 
+#save {
+   
+    float: right;
+    position:fixed;
+    bottom:50px;
+    right:50px;
+    min-width: 450px;
+   
+ 
+    font-family: 'Rocher';
+    text-shadow: 1px 2px 1px thistle;
+    color: thistle;
     font-size: 25px;
-    text-shadow: 2px 2px 2px white ;
-    background-image: url(../imgs/buttonbg.jpg);
+    padding: 25px 14px;
+    background-color: hsl(282, 39%, 58%);
+    border-radius: 12px;
+    border-color: #df9dfe;
+    transition: all 0.5s;
+    cursor: pointer;
+   
 }
 
 #avatar{
@@ -204,6 +249,53 @@
     position: absolute;
     top: 160px;
     left: 282px;
+}
+
+body{
+    cursor: url(https://ani.cursors-4u.net/nature/nat-11/nat1047.cur), default;
+    background-color: #926aa6;
+  }
+ 
+  #nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    margin: 0 0 1em 0;
+    padding: 0;
+    background-color: #bea6f3;
+    border-bottom: 1px solid #ccc;  }
+
+    #navbar ul, #navbar li{
+        display: inline-block;
+        margin: 5px 5px 5px 5px;
+        padding: 2px;
+        border: #bea6f3 outset 5px;
+        background-color: RebeccaPurple;
+    }
+
+     
+#nav ul {
+    list-style: none;
+    width: 800px;
+    margin: 0 auto;
+    padding: 0; }
+ 
+#nav li {
+    float: left; }
+ 
+/* other text font and color */
+p, figcaption, ol, #navbar li, a {
+    font-family: 'Rocher';
+   
+    color: thistle;
+    font-weight:900;
+    line-height: normal;
+    text-align: center;
+}
+ 
+/* rounded corners for navbar links */
+div.navbar li{
+    border-radius: 15px;
 }
 
 
