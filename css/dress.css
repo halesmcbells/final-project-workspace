@@ -34,6 +34,58 @@
     left: 90px;
 }
 
+#shirtbut{
+    position: absolute;
+    background-image: url(../imgs/shirtbutton35.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(250, 235, 215, 0);
+    border: rgba(255, 255, 255, 0);
+    width: 50px;
+    height:92px;
+    top: 46%;
+    left: 95px;
+}
+
+
+#pantsbut{
+    position: absolute;
+    background-image: url(../imgs/pantsbutton50.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(250, 235, 215, 0);
+    border: rgba(255, 255, 255, 0);
+    width: 50px;
+    height:92px;
+    top: 54%;
+    left: 95px;
+}
+
+#dressbut{
+    position: absolute;
+    background-image: url(../imgs/dressbutton35.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(250, 235, 215, 0);
+    border: rgba(255, 255, 255, 0);
+    width: 50px;
+    height:92px;
+    top: 65%;
+    left: 95px;
+}
+
+#shoebut{
+    position: absolute;
+    background-image: url(../imgs/shoebutton40.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(250, 235, 215, 0);
+    border: rgba(255, 255, 255, 0);
+    width: 50px;
+    height:92px;
+    top: 75%;
+    left: 95px;
+}
 
 /* move hatform to the left */
 .hatform {
@@ -55,6 +107,50 @@
     background-color: hsla(264, 63%, 19%, 0.842);
     border: 2px solid black;
     padding: 20px;
+}
+
+/* move pantsform */
+.pantsform {
+    position: absolute;
+    top: 38%;
+    right: 175px;
+    color: white;
+    background-color: hsla(264, 63%, 19%, 0.842);
+    border: 2px solid black;
+    padding: 15px;
+}
+
+/* move shirtform */
+.shirtform {
+    position: absolute;
+    top: 38%;
+    right: 175px;
+    color: white;
+    background-color: hsla(264, 63%, 19%, 0.842);
+    border: 2px solid black;
+    padding: 15px;
+}
+
+/* move shirtform */
+.dressform {
+    position: absolute;
+    top: 38%;
+    right: 175px;
+    color: white;
+    background-color: hsla(264, 63%, 19%, 0.842);
+    border: 2px solid black;
+    padding: 15px;
+}
+
+/* move shoeform */
+.shoeform {
+    position: absolute;
+    top: 38%;
+    right: 175px;
+    color: white;
+    background-color: hsla(264, 63%, 19%, 0.842);
+    border: 2px solid black;
+    padding: 15px;
 }
 
 #save {
@@ -84,5 +180,11 @@
     position: absolute;
     top: 58px;
     left: 341px;
+}
+
+#pantsChosen{
+    position: absolute;
+    top: 85px;
+    left: 242px;
 }
 

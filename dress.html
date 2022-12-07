@@ -16,17 +16,24 @@
           <p id = "avatar"> <img src="imgs/avatarnobg.png" alt="Dressing Room"></p>
           <img id ="hairChosen" src="imgs/blank.png">
           <img id ="hatChosen" src="imgs/blank.png">
-          <!-- <img src="imgs/pinkfem.png" alt="">  -->
+          <img id ="shirtChosen" src="imgs/blank.png">
+          <img id ="shoesChosen" src="imgs/blank.png">          
+          <img id ="pantsChosen" src="imgs/blank.png">
+          <img id ="dressChosen" src="imgs/blank.png">
+
 
           <p> <input type="button" value="Save avatar" id="save"> </p>
           <p id="forminstruct"> Click for clothing items: </p>
           <p><input type="button" value="" id="hatbut"></p>
           <p><input type="button" value="" id="hairbut"></p>
+          <p><input type="button" value="" id="shirtbut"></p>
+          <p><input type="button" value="" id="pantsbut"></p>
+          <p><input type="button" value="" id="dressbut"></p>
+          <p><input type="button" value="" id="shoebut"></p>
          </div>
 
         <form>
           <div class="hatform">
-            <!-- <form id="choice"> -->
               <p><input type="radio" name="hat" value="cowboy"> Cowboy hat </p>
               <p><input type="radio" name="hat" value="baseball"> Baseball cap </p>
               <p><input type="radio" name="hat" value="beanie"> Beanie </p>
@@ -34,14 +41,10 @@
               <p><input type="radio" name="hat" value="top"> Top hat </p>
               <p><input type="radio" name="hat" value="wiz"> Magical hat </p>
               <p><input type="radio" name="hat" value="removeHat"> No hat </p>
-            <!-- </form> -->
           </div>
-        <script src="js/hatchange.js">
-          
-        </script>
+        <script src="js/hatchange.js"></script>
 
         <div class="hairform">
-          <!-- <form id="choice"> -->
             <p><input type="radio" name="hair" value="blackmasc"> Short black  hair </p>
             <p><input type="radio" name="hair" value="brownmasc"> Short brown hair </p>
             <p><input type="radio" name="hair" value="longmasc"> Medium light hair </p>
@@ -49,10 +52,54 @@
             <p><input type="radio" name="hair" value="silver"> Long silver hair </p>
             <p><input type="radio" name="hair" value="pink"> Long pink hair </p>
             <p><input type="radio" name="hair" value="removeHair"> No hair </p>
-          <!-- </form> -->
         </div>
         <script src="js/hairchange.js"></script>
-      </form>
+      
+      <div class="pantsform">
+          <p><input type="radio" name="pants" value="denim"> Straight leg jeans </p>
+          <p><input type="radio" name="pants" value="ripped"> Ripped jeans </p>
+          <p><input type="radio" name="pants" value="rose"> Rose-pattern jeans </p>
+          <p><input type="radio" name="pants" value="overalls"> Overalls </p>
+          <p><input type="radio" name="pants" value="blackskirt"> Pencil skirt </p>
+          <p><input type="radio" name="pants" value="beltskirt"> Skirt with belt </p>
+          <p><input type="radio" name="pants" value="purpleskirt"> Purple skirt </p>
+          <p><input type="radio" name="pants" value="removePants"> Remove </p>
+      </div>
+      <script src="js/pantschange.js"></script>
+
+      <div class="shirtform">
+        <p><input type="radio" name="shirt" value="blackpolo"> Black Polo</p>
+        <p><input type="radio" name="shirt" value="whiteshirt"> White t-shirt </p>
+        <p><input type="radio" name="shirt" value="yellow"> Yellow Blazer </p>
+        <p><input type="radio" name="shirt" value="bluesweater"> Purple sweater </p>
+        <p><input type="radio" name="shirt" value="knotted"> Blue Knot Shirt </p>
+        <p><input type="radio" name="shirt" value="bluetshirt"> Blue T-shirt </p>
+        <p><input type="radio" name="shirt" value="flowerbutup"> Floral Button Up </p>
+        <p><input type="radio" name="shirt" value="removeShirt"> Remove </p>
+    </div>
+    <script src="js/shirtchange.js"></script>
+
+    <div class="dressform">
+      <p><input type="radio" name="dress" value="suit"> Handsome suit </p>
+      <p><input type="radio" name="dress" value="floraldress"> Floral Dress </p>
+      <p><input type="radio" name="dress" value="bluedress"> Blue Dress </p>
+      <p><input type="radio" name="dress" value="polkadress"> Black Polka Dot Dress </p>
+      <p><input type="radio" name="dress" value="blackdress"> Black Long Dress </p>
+      <p><input type="radio" name="dress" value="removeFull"> Remove </p>
+  </div>
+  <script src="js/dresschange.js"></script>
+
+  <div class="shoeform">
+    <p><input type="radio" name="shoes" value="bluesneaks"> Blue sneakers </p>
+    <p><input type="radio" name="shoes" value="brownboots"> Brown boots </p>
+    <p><input type="radio" name="shoes" value="flats"> Ballerina flats </p>
+    <p><input type="radio" name="shoes" value="converse"> Platform Converse </p>
+    <p><input type="radio" name="shoes" value="rainboots"> Silly rainboots </p>
+    <p><input type="radio" name="shoes" value="removeShoes"> Remove shoes </p>
+  </div>
+  <script src="js/shoechange.js"></script>
+    </form>
+
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>

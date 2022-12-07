@@ -1,5 +1,29 @@
 #avatar{
     position: absolute;
-    top: 25%;
-    left: 34%;
+    top: 200px;
+    left: 485px;
+}
+
+#hairReview{
+    position: absolute;
+    top: 259px;
+    left: 586px;
+}
+
+#hatReview{
+    position: absolute;
+    top: 213px;
+    left: 604px;
+}
+
+#next{
+    position: absolute;
+    top: 75%;
+    left: 3%;
+}
+
+#prev{
+    position: absolute;
+    top: 75%;
+    right: 3%;
 }
