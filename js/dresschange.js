@@ -13,29 +13,22 @@ $('#dressbut').click(function(){
 // JS for changing dress
 function dresschange(){
     let selectdress = document.querySelector('.dressform input[name="dress"]:checked').value;
-    // console.log("hair" +selecthair);
     switch (selectdress) {
         case "suit":
-            document.getElementById("dressChosen").setAttribute('src','imgs/blackpolo.png');
+            document.getElementById("dressChosen").setAttribute('src','imgs/suit.png');
             break;
-        case "whiteshirt":
-            document.getElementById("dressChosen").setAttribute('src','imgs/whitesh.png');
+        case "floraldress":
+            document.getElementById("dressChosen").setAttribute('src','imgs/flowerdress.png');
             break;
-        case "yellow":
-            document.getElementById("dressChosen").setAttribute('src', 'imgs/yellow.png');
+        case "bluedress":
+            document.getElementById("dressChosen").setAttribute('src', 'imgs/bluedress.png');
             break;
-        case "bluesweater":
-            document.getElementById("dressChosen").setAttribute('src', 'imgs/bluesweater.png');
+        case "polkadress":
+            document.getElementById("dressChosen").setAttribute('src', 'imgs/blackpolkadress.png');
             break;
-        case "knotted":
-            document.getElementById("dressChosen").setAttribute('src', 'imgs/bluetie.png');
+        case "blackdress":
+            document.getElementById("dressChosen").setAttribute('src', 'imgs/blackdress.png');
             break;
-        case "bluetshirt":
-            document.getElementById("dressChosen").setAttribute('src', 'imgs/bluetsh.png');
-            break;
-        case "flowerbutup":
-                document.getElementById("dressChosen").setAttribute('src', 'imgs/flowerbutup.png');
-                break;
         case "removeFull":
             document.getElementById("dressChosen").setAttribute('src', 'imgs/blank.png');
             break;

@@ -188,3 +188,23 @@
     left: 242px;
 }
 
+#shirtChosen{
+    position: absolute;
+    top: 150px;
+    left: 300px;
+}
+
+#shoesChosen{
+    position: absolute;
+    top: 502px;
+    left: 275px;
+}
+
+#dressChosen{
+    position: absolute;
+    top: 160px;
+    left: 282px;
+}
+
+
+
